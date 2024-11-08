@@ -1,19 +1,19 @@
-from sensor.entity.config_entity import TrainingPipelineConfig,DataIngestionConfig,DataValidationConfig,DataTransformationConfig
-from sensor.entity.artifact_entity import DataIngestionArtifact, DataValidationArtifact,DataTransformationArtifact
-from sensor.entity.artifact_entity import ModelEvaluationArtifact,ModelPusherArtifact,ModelTrainerArtifact
-from sensor.entity.config_entity import ModelPusherConfig,ModelEvaluationConfig,ModelTrainerConfig
+from src.sensor.entity.config_entity import TrainingPipelineConfig,DataIngestionConfig,DataValidationConfig,DataTransformationConfig
+from src.sensor.entity.artifact_entity import DataIngestionArtifact, DataValidationArtifact,DataTransformationArtifact
+from src.sensor.entity.artifact_entity import ModelEvaluationArtifact,ModelPusherArtifact,ModelTrainerArtifact
+from src.sensor.entity.config_entity import ModelPusherConfig,ModelEvaluationConfig,ModelTrainerConfig
 
-from sensor.exception import SensorException
+from src.sensor.exception import SensorException
 import sys,os
-from sensor.logger import logging
-from sensor.components.data_ingestion import DataIngestion
-from sensor.components.data_validation import DataValidation
-from sensor.components.data_transformation import DataTransformation
-from sensor.components.model_trainer import ModelTrainer
-from sensor.components.model_evaluation import ModelEvaluation
-from sensor.components.model_pusher import ModelPusher
+from src.sensor.logger import logging
+from src.sensor.components.data_ingestion import DataIngestion
+from src.sensor.components.data_validation import DataValidation
+from src.sensor.components.data_transformation import DataTransformation
+from src.sensor.components.model_trainer import ModelTrainer
+from src.sensor.components.model_evaluation import ModelEvaluation
+from src.sensor.components.model_pusher import ModelPusher
 
-from sensor.constants.training_pipeline import SAVED_MODEL_DIR
+from src.sensor.constants.training_pipeline import SAVED_MODEL_DIR
 
 
 

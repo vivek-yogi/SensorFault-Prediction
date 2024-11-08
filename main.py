@@ -1,11 +1,11 @@
-from sensor.configuration.mongo_db_connection import MongoDBClient
-from sensor.exception import SensorException
+from src.sensor.configuration.mongo_db_connection import MongoDBClient
+from src.sensor.exception import SensorException
 import os , sys
-from sensor.logger import logging
+from src.sensor.logger import logging
 #from  sensor.utils import dump_csv_file_to_mongodb_collecton
 #from sensor.entity.config_entity  import TrainingPipelineConfig,DataIngestionConfig
 
-from sensor.pipeline.training_pipeline import TrainPipeline
+from src.sensor.pipeline.training_pipeline import TrainPipeline
 
 # def test_exception():
 #     try:

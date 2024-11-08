@@ -4,8 +4,8 @@ import numpy as np
 import os
 import dill
 import sys
-from sensor.exception import SensorException
-from sensor.logger import logging
+from src.sensor.exception import SensorException
+from src.sensor.logger import logging
 
 
 def read_yaml_file(file_path:str)->dict:

@@ -1,4 +1,4 @@
-from sensor.constants.training_pipeline import SAVED_MODEL_DIR,MODEL_FILE_NAME
+from src.sensor.constants.training_pipeline import SAVED_MODEL_DIR,MODEL_FILE_NAME
 
 
 import os

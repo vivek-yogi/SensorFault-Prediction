@@ -1,17 +1,17 @@
 
-from sensor.exception import SensorException
-from sensor.logger import logging
+from src.sensor.exception import SensorException
+from src.sensor.logger import logging
 import os 
 import sys
 from pandas import DataFrame
-from sensor.entity.config_entity import DataIngestionConfig
-from sensor.entity.artifact_entity import DataIngestionArtifact
-from sensor.data_access.sensor_data import SensorData
+from src.sensor.entity.config_entity import DataIngestionConfig
+from src.sensor.entity.artifact_entity import DataIngestionArtifact
+from src.sensor.data_access.sensor_data import SensorData
 from sklearn.model_selection import train_test_split
 
-from sensor.utils.main_utils import read_yaml_file  
+from src.sensor.utils.main_utils import read_yaml_file  
 
-from sensor.constants.training_pipeline import SCHEMA_FILE_PATH
+from src.sensor.constants.training_pipeline import SCHEMA_FILE_PATH
 
 
 class DataIngestion:

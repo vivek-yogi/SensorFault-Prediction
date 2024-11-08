@@ -1,20 +1,20 @@
 
-from sensor.exception import SensorException
-from sensor.logger import logging
+from src.sensor.exception import SensorException
+from src.sensor.logger import logging
 
-from sensor.entity.artifact_entity import DataValidationArtifact,ModelTrainerArtifact,ModelEvaluationArtifact
-from sensor.entity.config_entity import ModelEvaluationConfig,ModelTrainerConfig
+from src.sensor.entity.artifact_entity import DataValidationArtifact,ModelTrainerArtifact,ModelEvaluationArtifact
+from src.sensor.entity.config_entity import ModelEvaluationConfig,ModelTrainerConfig
 
 import os,sys
 
-from sensor.ml.metric.classification_metric import get_classification_score
+from src.sensor.ml.metric.classification_metric import get_classification_score
 
-from sensor.ml.model.estimator import SensorModel
+from src.sensor.ml.model.estimator import SensorModel
 
-from sensor.utils.main_utils import save_object,load_object,write_yaml_file
-from sensor.ml.model.estimator import ModelResolver
-from sensor.constants.training_pipeline import TARGET_COLUMN
-from sensor.ml.model.estimator import TargetValueMapping
+from src.sensor.utils.main_utils import save_object,load_object,write_yaml_file
+from src.sensor.ml.model.estimator import ModelResolver
+from src.sensor.constants.training_pipeline import TARGET_COLUMN
+from src.sensor.ml.model.estimator import TargetValueMapping
 import pandas  as  pd
 
 

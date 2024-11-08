@@ -1,13 +1,13 @@
 from distutils import dir_util
 
-from sensor.constants.training_pipeline import SCHEMA_FILE_PATH
+from src.sensor.constants.training_pipeline import SCHEMA_FILE_PATH
 
-from sensor.entity.artifact_entity import DataIngestionArtifact, DataValidationArtifact
+from src.sensor.entity.artifact_entity import DataIngestionArtifact, DataValidationArtifact
 
-from sensor.entity.config_entity import DataValidationConfig
-from sensor.exception import SensorException
-from sensor.logger import logging
-from sensor.utils.main_utils import read_yaml_file, write_yaml_file
+from src.sensor.entity.config_entity import DataValidationConfig
+from src.sensor.exception import SensorException
+from src.sensor.logger import logging
+from src.sensor.utils.main_utils import read_yaml_file, write_yaml_file
 from scipy.stats import ks_2samp
 import pandas as pd
 import os,sys
